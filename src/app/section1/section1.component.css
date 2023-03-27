@@ -1,0 +1,78 @@
+.film{
+    background-color: white;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding: 2rem 0 2rem 0rem;
+    display: flex;
+ }
+ 
+.film__container{
+     justify-content: center;
+     flex-direction: row;
+}
+
+.text{
+     justify-content: center;
+     flex-direction: row;
+}
+.image-film{
+     width: 478px;
+     height: 403px;
+     max-width: 100%;
+     float: right;
+     margin-left: 5rem;
+     right: 50px;
+
+}
+ 
+ .film_titulo{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #502C8E;
+}
+ 
+ 
+.film_text{
+     margin-top: 20px;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 20px;
+     line-height: 23px;
+ 
+     color: #000000;
+}
+ 
+.film_button{
+    width: 125px;
+    margin-top: 20rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #502c8e;
+    padding: .65rem 1rem;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+    box-sizing: content-box;
+    margin-top: 34px;
+    justify-content:center;
+    font-family: 'Roboto';
+    border: 1px solid #cbbbeb;
+    border-radius: 8px;
+    background-color: #cbbbeb;
+}
+
+ 
+@media screen and (min-width:800px){
+.film{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-flow: row wrap;
+     max-width: 100%;
+}
+ }

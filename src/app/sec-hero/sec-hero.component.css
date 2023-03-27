@@ -1,0 +1,46 @@
+.sec-hero{
+    padding: 2rem 0 2rem 0rem;
+    display: flex;
+    flex-direction: column; 
+    background-color: #ffffff;
+    margin-bottom: .45rem;
+    box-sizing: content-box;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.first-title{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #502C8E;
+}
+
+.first-article{
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000000;
+}
+
+.heroimg{
+    width: 700px;
+    height: 300px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+@media screen and (min-width:600px){
+    .sec-hero{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+}

@@ -1,0 +1,146 @@
+.head {
+    display: flex; 
+    background-color: #9285a87e;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    margin-bottom: 0.75rem;  
+    width:100%;
+    top: 0px;
+    overflow:hidden;
+}
+.head_logo {
+     width: 70px;
+     margin-left: 30px;
+  
+}
+.head_nav {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    margin-top: 5px;    
+}
+.nombrepagina{ 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 38px;
+    color: #502C8E;
+    float: left;
+    margin-right: 40rem;
+
+}
+.head_nav button{
+    background-color: #764ac2;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border-color:#ac78ac;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.active, .head_nav button:hover {
+    background-color: #53d2e2;
+}
+
+.head_link {
+    display: inline-block;
+    margin-right: .7rem;
+    margin-bottom: .7rem;
+    margin-left: .7rem;
+    color: #ffffff;
+    text-decoration: none;    
+}
+
+.head_link a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Menu Hamburguesa*/
+.bars_menu {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu_items {
+        display: none;
+    }
+
+    .menu_items.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        z-index: 1;
+    }
+
+    .head_link button {
+        display: block;
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .menu_items {
+      display: none;
+    }
+  
+    .head_nav {
+      height: auto;
+    }
+  
+    .bars_menu {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      float: right;
+    }
+  
+    .bars_menu span {
+      display: block;
+      height: 2px;
+      width: 25px;
+      margin: 5px auto;
+      background-color: #333;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .bars_menu.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .bars_menu.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .bars_menu.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .menu_items.active {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .menu_items.active li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  
